@@ -11,5 +11,8 @@ router.get("/indexpage", mainControllers.indexPage_get)
 // servicesPage_get
 router.get("/servicespage", mainControllers.servicesPage_get)
 
+//skillsPage_get 
+router.get("/skillspage", mainControllers.skillsPage_get)
+
 // export the module
 module.exports = router

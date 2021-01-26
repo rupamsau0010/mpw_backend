@@ -1,12 +1,12 @@
 // Require Depandencies
 
 // Import Local Depandebncies
-const ServicesPage = require("../models/servicesPage")
+const SkillsPage = require("../models/skillsPage")
 
-const saveServicesPage = () => {
-    const servicesPage = new ServicesPage({
-        artificialName: "servicesPage",
-        servicesData: [
+const saveSkillsPage = () => {
+    const skillsPage = new SkillsPage({
+        artificialName: "skillsPage",
+        skillsData: [
             {
                 title: "Full Stack developer",
                 tagLine: "For who thoroughly her boy estimating conviction. Removed demands expense account in outward tedious do. Particular way thoroughly unaffected projection favourable mrs can projecting own. Thirty it matter enable become admire in giving. See resolved goodness felicity shy civility domestic had but. Drawings offended yet answered jennings perceive laughing six did far.",
@@ -25,7 +25,7 @@ const saveServicesPage = () => {
         ]
     })
 
-    servicesPage.save((err, result) => {
+    skillsPage.save((err, result) => {
         if(!err && result) {
             console.log(result);
         } else {
@@ -34,4 +34,4 @@ const saveServicesPage = () => {
     }) 
 }
 
-module.exports = saveServicesPage
+module.exports = saveSkillsPage

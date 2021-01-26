@@ -1,12 +1,12 @@
 // Require the depandencies
 const mongoose = require("mongoose")
 
-const serviceSchema = new mongoose.Schema({
+const skillsSchema = new mongoose.Schema({
     artificialName: {
         type: String,
         required: true
     },
-    servicesData: [
+    skillsData: [
         {
             title: {
                 type: String,
@@ -24,4 +24,4 @@ const serviceSchema = new mongoose.Schema({
     ]
 })
 
-module.exports = mongoose.model("servicespage", serviceSchema)
+module.exports = mongoose.model("skillspage", skillsSchema)
