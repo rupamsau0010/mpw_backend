@@ -8,6 +8,7 @@ const app = express()
 const mongoConnect = require("./configs/mongoDB")
 const mainRoutes = require("./routes/mainRoutes")
 // const saveIndexPage = require("./temp/indexPageInput")
+// const saveServicesPage = require("./temp/servicesPageInput") 
 
 // Connect to mongoDB Cluster
 mongoConnect()
@@ -16,8 +17,11 @@ mongoConnect()
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
-// Router Calling
+// temp page calling
 // saveIndexPage()
+// saveServicesPage()
+
+// Router Calling
 app.use(mainRoutes)
 
 // Running the server on port 5000
