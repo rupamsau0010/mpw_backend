@@ -5,7 +5,7 @@ const IndexPage = require("../models/indexPage");
 
 const saveIndexPage = () => {
   const indexPage = new IndexPage({
-    : "indexPageartificialName",
+    artificialName: "indexPage",
     name: "Rupam Sau",
     profileImg:
       "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg",

@@ -20,5 +20,8 @@ router.get("/coursespage", mainControllers.coursesPage_get)
 // othersPage_get
 router.get("/otherspage", mainControllers.othersPage_get)
 
+// sendMessage_post
+router.post("/sendmessage", mainControllers.sendMessage_post)
+
 // export the module
 module.exports = router
