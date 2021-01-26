@@ -6,9 +6,16 @@ const app = express()
 
 // Import local depandencies
 const mongoConnect = require("./configs/mongoDB")
+// const saveIndexPage = require("./temp/indexPageInput")
 
 // Connect to mongoDB Cluster
 mongoConnect()
+
+// Middlewares for express
+app.use(express.json())
+app.use(express.urlencoded({extended: true}))
+
+// saveIndexPage()
 
 // Running the server on port 5000
 const port = process.env.PORT

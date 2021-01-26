@@ -2,6 +2,10 @@
 const mongoose = require("mongoose")
 
 const indexPageSchema = new mongoose.Schema({
+    artificialName: {
+        type: String,
+        required: true
+    },
     name: {
         type: String,
         required: true
