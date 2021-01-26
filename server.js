@@ -9,7 +9,8 @@ const mongoConnect = require("./configs/mongoDB")
 const mainRoutes = require("./routes/mainRoutes")
 // const saveIndexPage = require("./temp/indexPageInput")
 // const saveServicesPage = require("./temp/servicesPageInput") 
-const saveSkillsPage = require("./temp/skillsPageInput")
+// const saveSkillsPage = require("./temp/skillsPageInput")
+// const saveCoursesPage = require("./temp/coursesPageInput")
 
 // Connect to mongoDB Cluster
 mongoConnect()
@@ -21,7 +22,8 @@ app.use(express.urlencoded({extended: true}))
 // temp page calling
 // saveIndexPage()
 // saveServicesPage()
-saveSkillsPage()
+// saveSkillsPage()
+// saveCoursesPage()
 
 // Router Calling
 app.use(mainRoutes)
