@@ -5,6 +5,7 @@ const IndexPage = require("../models/indexPage")
 const ServicesPage = require("../models/servicesPage")
 const SkillsPage = require("../models/skillsPage")
 const Coursespage = require("../models/coursesPage")
+const OthersPage = require("../models/othersPage")
 
 // Get the indexPage data
 module.exports.indexPage_get = async(req, res) => {
@@ -64,6 +65,24 @@ module.exports.skillsPage_get = async(req, res) => {
 module.exports.coursesPage_get = async(req, res) => {
     // Find the servicesPage data and show in the frontend
     Coursespage.findOne({ artificialName: "coursesPage" }, function(err1, data1){
+        if(data1 && !err1) {
+            res.json({
+                status: "success",
+                payload: data1
+            })
+        } else {
+            res.json({
+                status: "failure",
+                payload: null
+            })
+        }
+    })
+}
+
+// Get the othersPage data
+module.exports.othersPage_get = async(req, res) => {
+    // Find the servicesPage data and show in the frontend
+    OthersPage.findOne({ artificialName: "othersPage" }, function(err1, data1){
         if(data1 && !err1) {
             res.json({
                 status: "success",

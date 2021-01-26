@@ -17,5 +17,8 @@ router.get("/skillspage", mainControllers.skillsPage_get)
 // coursesPage_get
 router.get("/coursespage", mainControllers.coursesPage_get)
 
+// othersPage_get
+router.get("/otherspage", mainControllers.othersPage_get)
+
 // export the module
 module.exports = router
