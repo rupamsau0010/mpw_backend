@@ -5,6 +5,7 @@ import IndexPage from "./IndexPage"
 import ServicesPage from "./ServicesPage"
 import SkillsPage from "./SkillsPage"
 import CoursesPage from "./CoursesPage"
+import OthersPage from "./OthersPage"
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route exact path="/services" component={ServicesPage} />
           <Route exact path="/skills" component={SkillsPage} />
           <Route exact path="/courses" component={CoursesPage} />
+          <Route exact path="/others" component={OthersPage} />
         </Switch>
       </div>
     </Router>
