@@ -1,5 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../style.css";
+
+import pdf from "../pdfs/cv.pdf";
 
 const IndexPage = () => {
   return (
@@ -11,7 +14,7 @@ const IndexPage = () => {
       <nav className="navbar">
         <div className="max-width">
           <div className="logo">
-            <a href="#">
+            <a href="#home">
               Protfo<span>lio</span>
             </a>
           </div>
@@ -23,19 +26,23 @@ const IndexPage = () => {
               <a href="#about">About</a>
             </li>
             <li>
-              <a href="">Services</a>
+              <a href="#services">Services</a>
             </li>
             <li>
-              <a href="">Skills</a>
+              <a href="#skills">Skills</a>
             </li>
             <li>
-              <a href="">Courses</a>
+              <Link to="/courses" class="" role="button">
+                <span>&nbsp;&nbsp;courses&nbsp;&nbsp;</span>
+              </Link>
             </li>
             <li>
-              <a href="">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
             <li>
-              <a href="">Others</a>
+              <Link to="/others" class="" role="button">
+                <span>&nbsp;&nbsp;Others&nbsp;&nbsp;</span>
+              </Link>
             </li>
           </ul>
           <div className="menu-btn">
@@ -53,7 +60,7 @@ const IndexPage = () => {
               And I'm a <span className="typing"></span>
             </div>
             {/* <div className="text-3">And I'm a <span className="typing-3"></span></div>  */}
-            <a href="#">Get in touch</a>
+            <a href="#contact">Get in touch</a>
           </div>
         </div>
       </section>
@@ -95,7 +102,7 @@ const IndexPage = () => {
                 deleniti magnam dolorem numquam excepturi eaque laborum,
                 repudiandae quas.
               </p>
-              <a href="pdfs/cv.pdf" target="_blank">
+              <a href={pdf} target="_blank">
                 Download CV
               </a>
             </div>
@@ -116,6 +123,9 @@ const IndexPage = () => {
                   Nesciunt voluptatibus labore illo assumenda nulla veniam
                   quibusdam illum natus excepturi quisquam!
                 </p>
+                <Link to="/services" class="link" role="button">
+                  <span>&nbsp;&nbsp;see more&nbsp;&nbsp;</span>
+                </Link>
               </div>
             </div>
             <div className="card">
@@ -127,6 +137,9 @@ const IndexPage = () => {
                   Nesciunt voluptatibus labore illo assumenda nulla veniam
                   quibusdam illum natus excepturi quisquam!
                 </p>
+                <Link to="/services" class="link" role="button">
+                  <span>&nbsp;&nbsp;see more&nbsp;&nbsp;</span>
+                </Link>
               </div>
             </div>
             <div className="card">
@@ -138,6 +151,9 @@ const IndexPage = () => {
                   Nesciunt voluptatibus labore illo assumenda nulla veniam
                   quibusdam illum natus excepturi quisquam!
                 </p>
+                <Link to="/services" class="link" role="button">
+                  <span>&nbsp;&nbsp;see more&nbsp;&nbsp;</span>
+                </Link>
               </div>
             </div>
           </div>
@@ -160,7 +176,9 @@ const IndexPage = () => {
                 aliquid, mollitia sed voluptate nobis corporis commodi ipsam
                 rerum, ex ratione soluta!
               </p>
-              <a href="#">Read more</a>
+              <Link to="/skills" class="link" role="button">
+                <span>&nbsp;&nbsp;see more&nbsp;&nbsp;</span>
+              </Link>
             </div>
             <div className="column right">
               <div className="bars">
@@ -202,8 +220,9 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
+
       {/* <!--contect section start---> */}
-      <section className="contact" id="content">
+      <section className="contact" id="contact">
         <div className="max-width">
           <h2 className="title">Conteact me</h2>
           <div className="contact-content">

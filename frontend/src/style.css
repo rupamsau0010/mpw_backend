@@ -274,7 +274,6 @@ section .title::after{
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
-    cursor: pointer;
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
@@ -298,6 +297,24 @@ section .title::after{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+}
+
+.services .serv-content .card .box .link {
+    margin: 10px 15px;
+    
+    border: 2px solid crimson;
+    background: crimson;
+    color: #fff;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card .box .link:hover {
+    border: 2px solid #fff;
 }
 
 /* skills section styling */
@@ -776,6 +793,7 @@ p.s2{
 .hobby .sub-tag-content .content span {
     color: crimson;
 }
+
 
 /* responsive media query start */
 @media (max-width: 1300px) {
