@@ -1,5 +1,6 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
+import Typewriter from "typewriter-effect";
 import "../style.css";
 
 const ServicesPage = () => {
@@ -19,25 +20,39 @@ const ServicesPage = () => {
           </div>
           <ul className="menu">
             <li>
-              <a href="#home">Home</a>
+              <Link to="/" class="" role="button">
+                <span>Home</span>
+              </Link>
             </li>
             <li>
-              <a href="#about">About</a>
+              <Link to="/#about" class="" role="button">
+                <span>About</span>
+              </Link>
             </li>
             <li>
-              <a href="">Services</a>
+             <Link to="/services" class="" role="button">
+                <span>Services</span>
+              </Link>
             </li>
             <li>
-              <a href="">Skills</a>
+              <Link to="/skills" class="" role="button">
+                <span>Skills</span>
+              </Link>
             </li>
             <li>
-              <a href="">Courses</a>
+              <Link to="/courses" class="" role="button">
+                <span>Courses</span>
+              </Link>
             </li>
             <li>
-              <a href="">Contact</a>
+              <Link to="/#contact" class="" role="button">
+                <span>Contact</span>
+              </Link>
             </li>
             <li>
-              <a href="">Others</a>
+              <Link to="/others" class="" role="button">
+                <span>Others</span>
+              </Link>
             </li>
           </ul>
           <div className="menu-btn">
@@ -51,17 +66,22 @@ const ServicesPage = () => {
         <div className="max-width">
           <div className="home-content">
             <div className="text-2">My Services</div>
-            <div className="text-3" style={{display: "none"}}>
-              And I'm a <span className="typing"></span>
-            </div>
-            <div className="text-3" style={{display: "none"}}>
-              And I'm a <span className="typing-2"></span>
-            </div>
             <div className="text-3">Most of my services are including</div>
             <div className="text-3">
-              <span className="typing-3"></span>
+              And I'm a {" "}
+              <span style={{display: "inline-block"}}>
+                <Typewriter
+                  options={{
+                    strings: ["Hello", "World"],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </span>
             </div>
-            <a href="#">Get in touch</a>
+            <Link to="/#contact" class="" role="button">
+              <span>Get in touch</span>
+            </Link>
           </div>
         </div>
       </section>

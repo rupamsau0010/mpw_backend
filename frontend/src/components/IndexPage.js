@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Typewriter from "typewriter-effect";
 import "../style.css";
 
 import pdf from "../pdfs/cv.pdf";
@@ -10,7 +11,6 @@ const IndexPage = () => {
       <div className="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
       </div>
-
       <nav className="navbar">
         <div className="max-width">
           <div className="logo">
@@ -33,7 +33,7 @@ const IndexPage = () => {
             </li>
             <li>
               <Link to="/courses" class="" role="button">
-                <span>&nbsp;&nbsp;courses&nbsp;&nbsp;</span>
+                <span>Courses</span>
               </Link>
             </li>
             <li>
@@ -41,7 +41,7 @@ const IndexPage = () => {
             </li>
             <li>
               <Link to="/others" class="" role="button">
-                <span>&nbsp;&nbsp;Others&nbsp;&nbsp;</span>
+                <span>Others</span>
               </Link>
             </li>
           </ul>
@@ -57,7 +57,16 @@ const IndexPage = () => {
             <div className="text-1">Hello, my name is</div>
             <div className="text-2">Rupam Sau</div>
             <div className="text-3">
-              And I'm a <span className="typing"></span>
+              And I'm a {" "}
+              <span style={{display: "inline-block"}}>
+                <Typewriter
+                  options={{
+                    strings: ["Hello", "World"],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </span>
             </div>
             {/* <div className="text-3">And I'm a <span className="typing-3"></span></div>  */}
             <a href="#contact">Get in touch</a>
@@ -77,7 +86,7 @@ const IndexPage = () => {
                 I'm Rupam and I am <span className="typing-2"></span>
               </div>
               <p>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Lorem ipsum dolor sit
+                Lorem ipsum dolor sit
                 amet consectetur adipisicing elit. Veritatis suscipit deserunt
                 nobis ex repellendus nihil odio quidem optio molestias
                 laboriosam quasi soluta in velit eligendi, vel aliquam quos.
@@ -90,7 +99,7 @@ const IndexPage = () => {
                 repudiandae quas.
               </p>
               <p>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Lorem ipsum dolor sit
+                Lorem ipsum dolor sit
                 amet consectetur adipisicing elit. Veritatis suscipit deserunt
                 nobis ex repellendus nihil odio quidem optio molestias
                 laboriosam quasi soluta in velit eligendi, vel aliquam quos.
