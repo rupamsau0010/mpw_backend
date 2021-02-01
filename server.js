@@ -2,6 +2,7 @@
 require("dotenv").config()
 
 const express = require("express")
+// const cors = require("cors")
 const app = express()
 
 // Import local depandencies
@@ -18,6 +19,7 @@ mongoConnect()
 
 // Middlewares for express
 app.use(express.json())
+// app.use(cors())
 app.use(express.urlencoded({extended: true}))
 
 // temp page calling

@@ -57,8 +57,8 @@ const IndexPage = () => {
             <div className="text-1">Hello, my name is</div>
             <div className="text-2">Rupam Sau</div>
             <div className="text-3">
-              And I'm a {" "}
-              <span style={{display: "inline-block"}}>
+              And I'm a{" "}
+              <span style={{ display: "inline-block" }}>
                 <Typewriter
                   options={{
                     strings: ["Hello", "World"],
@@ -83,33 +83,40 @@ const IndexPage = () => {
             </div>
             <div className="column right">
               <div className="text">
-                I'm Rupam and I am <span className="typing-2"></span>
+                I'm Rupam and I am{" "}
+                <span style={{ display: "inline-block" }}>
+                  <Typewriter
+                    options={{
+                      strings: ["Hello", "World"],
+                      autoStart: true,
+                      loop: true,
+                    }}
+                  />
+                </span>
               </div>
               <p>
-                Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Veritatis suscipit deserunt
-                nobis ex repellendus nihil odio quidem optio molestias
-                laboriosam quasi soluta in velit eligendi, vel aliquam quos.
-                Quidem, doloremque ut maxime dolorem consequatur itaque
-                asperiores delectus numquam omnis natus voluptatibus assumenda
-                rerum necessitatibus deleniti sed ex. Esse corrupti suscipit
-                accusamus quos, rem nostrum asperiores deserunt beatae! Quidem
-                iure delectus sed, maxime nemo consequuntur quam, veritatis
-                deleniti magnam dolorem numquam excepturi eaque laborum,
-                repudiandae quas.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis suscipit deserunt nobis ex repellendus nihil odio
+                quidem optio molestias laboriosam quasi soluta in velit
+                eligendi, vel aliquam quos. Quidem, doloremque ut maxime dolorem
+                consequatur itaque asperiores delectus numquam omnis natus
+                voluptatibus assumenda rerum necessitatibus deleniti sed ex.
+                Esse corrupti suscipit accusamus quos, rem nostrum asperiores
+                deserunt beatae! Quidem iure delectus sed, maxime nemo
+                consequuntur quam, veritatis deleniti magnam dolorem numquam
+                excepturi eaque laborum, repudiandae quas.
               </p>
               <p>
-                Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Veritatis suscipit deserunt
-                nobis ex repellendus nihil odio quidem optio molestias
-                laboriosam quasi soluta in velit eligendi, vel aliquam quos.
-                Quidem, doloremque ut maxime dolorem consequatur itaque
-                asperiores delectus numquam omnis natus voluptatibus assumenda
-                rerum necessitatibus deleniti sed ex. Esse corrupti suscipit
-                accusamus quos, rem nostrum asperiores deserunt beatae! Quidem
-                iure delectus sed, maxime nemo consequuntur quam, veritatis
-                deleniti magnam dolorem numquam excepturi eaque laborum,
-                repudiandae quas.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis suscipit deserunt nobis ex repellendus nihil odio
+                quidem optio molestias laboriosam quasi soluta in velit
+                eligendi, vel aliquam quos. Quidem, doloremque ut maxime dolorem
+                consequatur itaque asperiores delectus numquam omnis natus
+                voluptatibus assumenda rerum necessitatibus deleniti sed ex.
+                Esse corrupti suscipit accusamus quos, rem nostrum asperiores
+                deserunt beatae! Quidem iure delectus sed, maxime nemo
+                consequuntur quam, veritatis deleniti magnam dolorem numquam
+                excepturi eaque laborum, repudiandae quas.
               </p>
               <a href={pdf} target="_blank">
                 Download CV
