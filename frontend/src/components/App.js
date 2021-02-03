@@ -11,10 +11,10 @@ import OthersPage from "./OthersPage"
 
 function App() {
   return (
-    <Router forceRefresh={true}>
+    <Router>
       <div>
       <ScrollToTop />
-        <Switch forceRefresh={true}>
+        <Switch>
           <Route exact path="/" component={IndexPage} />
           <Route exact path="/services" component={ServicesPage} />
           <Route exact path="/skills" component={SkillsPage} />
