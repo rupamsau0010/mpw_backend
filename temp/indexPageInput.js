@@ -13,16 +13,19 @@ const saveIndexPage = () => {
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis suscipit deserunt nobis ex repellendus nihil odio quidem optio molestias laboriosam quasi soluta in velit eligendi, vel aliquam quos. Quidem, doloremque ut maxime dolorem consequatur itaque asperiores delectus numquam omnis natus voluptatibus assumenda rerum necessitatibus deleniti sed ex. Esse corrupti suscipit accusamus quos, rem nostrum asperiores deserunt beatae! Quidem iure delectus sed, maxime nemo consequuntur quam, veritatis deleniti magnam dolorem numquam excepturi eaque laborum, repudiandae quas.",
     services: [
       {
+        class: "fas fa-paint-brush",
         name: "Web design",
         tagLine:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus labore illo assumenda nulla veniam quibusdam illum natus excepturi quisquam!",
       },
       {
+        class: "fas fa-paint-brush",
         name: "Web design",
         tagLine:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus labore illo assumenda nulla veniam quibusdam illum natus excepturi quisquam!",
       },
       {
+        class: "fas fa-paint-brush",
         name: "Web design",
         tagLine:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus labore illo assumenda nulla veniam quibusdam illum natus excepturi quisquam!",

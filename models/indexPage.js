@@ -20,6 +20,7 @@ const indexPageSchema = new mongoose.Schema({
     },
     services: [
         {
+            class: {type: String, required: true},
             name: {type: String, required: true},
             tagLine: {type: String, required: true}
         }
