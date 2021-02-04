@@ -4,6 +4,7 @@ import $ from "jquery";
 import { Link, useLocation } from "react-router-dom";
 import Loader from "react-loader-spinner";
 import Typewriter from "typewriter-effect";
+import validator from "email-validator"
 import "../style.css";
 
 import pdf from "../pdfs/cv.pdf";
@@ -18,6 +19,54 @@ export default class IndexPage extends Component {
   state = {
     allData: {},
     showHideSidenav: "hidden",
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  };
+
+  handleChange = (event) => {
+    const target = event.target;
+    const name = target.name;
+    const value = target.value;
+
+    this.setState({
+      [name]: value,
+    });
+  };
+
+  submit = (event) => {
+    event.preventDefault();
+
+    const payload = {
+      name: this.state.name,
+      email: this.state.email,
+      subject: this.state.subject,
+      message: this.state.message,
+    };
+
+    let emailResult = validator.validate(payload.email)
+    let nameCheck = payload.name.split(" ").length
+
+    if(emailResult && (nameCheck >= 2)) {
+      axios({
+        url: "/sendmessage",
+        method: "POST",
+        data: payload,
+      })
+        .then((resuly) => {
+          console.log("Message sent succssfully");
+          alert(
+            "Thank you for connecting with me. I will definitely get back to you as soon as possible"
+          );
+        })
+        .catch((err) => {
+          console.log(err);
+          alert("Internal server error. Try again")
+        });
+    } else {
+      alert("Please Check your Full name and email and try again")
+    }
   };
 
   componentDidMount = () => {
@@ -188,9 +237,7 @@ export default class IndexPage extends Component {
               <div className="skills-content">
                 <div className="column left">
                   <div className="text">My skills and experience</div>
-                  <p>
-                    {allData.skillsMain}
-                  </p>
+                  <p>{allData.skillsMain}</p>
                   <Link to="/skills" class="link" role="button">
                     <span>&nbsp;&nbsp;see more&nbsp;&nbsp;</span>
                   </Link>
@@ -243,9 +290,7 @@ export default class IndexPage extends Component {
               <div className="contact-content">
                 <div className="column left">
                   <div className="text">Get in touch</div>
-                  <p>
-                    {allData.contact.tagLine}
-                  </p>
+                  <p>{allData.contact.tagLine}</p>
                   <div className="icons">
                     <div className="row">
                       <i class="fas fa-user"></i>
@@ -258,7 +303,9 @@ export default class IndexPage extends Component {
                       <i class="fas fa-map-marker-alt"></i>
                       <div className="info">
                         <div className="head">Address</div>
-                        <div className="sub-title">{allData.contact.address}</div>
+                        <div className="sub-title">
+                          {allData.contact.address}
+                        </div>
                       </div>
                     </div>
                     <div className="row">
@@ -275,25 +322,51 @@ export default class IndexPage extends Component {
                     <form className="#">
                       <div className="fields">
                         <div className="field name">
-                          <input type="text" placeholder="Name" required />
+                          <input
+                            type="text"
+                            placeholder="Name"
+                            name="name"
+                            onChange={this.handleChange}
+                            value={this.state.name}
+                            required
+                          />
                         </div>
                         <div className="field email">
-                          <input type="email" placeholder="Email" required />
+                          <input
+                            type="email"
+                            placeholder="Email"
+                            name="email"
+                            onChange={this.handleChange}
+                            value={this.state.email}
+                            required
+                          />
                         </div>
                       </div>
                       <div className="field">
-                        <input type="text" placeholder="Subject" required />
+                        <input
+                          type="text"
+                          placeholder="Subject"
+                          name="subject"
+                          onChange={this.handleChange}
+                          value={this.state.subject}
+                          required
+                        />
                       </div>
                       <div className="field textarea">
                         <textarea
                           cols="30"
                           rows="10"
                           placeholder="Describe project"
+                          name="message"
+                          onChange={this.handleChange}
+                          value={this.state.message}
                           required
                         ></textarea>
                       </div>
                       <div className="button">
-                        <button type="submit">Send message</button>
+                        <button type="button" onClick={this.submit}>
+                          Send message
+                        </button>
                       </div>
                     </form>
                   </div>
