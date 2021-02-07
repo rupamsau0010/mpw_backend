@@ -125,21 +125,12 @@ export default class SkillsPage extends Component {
             <div className="max-width">
               <div className="home-content">
                 <div className="text-2">My Services</div>
-                <div className="text-3" style={{ display: "none" }}>
-                  And I'm a <span className="typing"></span>
-                </div>
-                <div className="text-3" style={{ display: "none" }}>
-                  And I'm a <span className="typing-2"></span>
-                </div>
-                <div className="text-3" style={{ display: "none" }}>
-                  And I'm a <span className="typing-3"></span>
-                </div>
                 <div className="text-3">
-                  I have hands on expreence on including
+                  I have some hands-on experience in
                   <span>
                     <Typewriter
                       options={{
-                        strings: ["Hello", "World"],
+                        strings: ["Node.js", "React.js", "MongoDB", "Express.js", "Python", "Object Oriented Programming", "AWS", "Git version control", "Java" , "C++", "C"],
                         autoStart: true,
                         loop: true,
                       }}
@@ -149,7 +140,9 @@ export default class SkillsPage extends Component {
                 <div className="text-3">
                   <span className="typing-4"></span>
                 </div>
-                <a href="#">Get in touch</a>
+                <Link to="/#contact" class="" role="button">
+                  <span>Get in touch</span>
+                </Link>
               </div>
             </div>
           </section>
@@ -175,23 +168,23 @@ export default class SkillsPage extends Component {
           </section>
           {/* <!--footer section---> */}
           <footer>
-            <a href="https://www.facebook.com/">
-              <i class="social_icons facebook_logo fab fa-facebook-square fa-2x"></i>
+            <a href="https://www.linkedin.com/in/rupamsau0010">
+              <i class="social_icons facebook_logo fab fa-linkedin fa-2x"></i> {/* LinkedIn === facebook */}
             </a>
-            <a href="https://www.instagram.com/">
-              <i class="social_icons instagram_logo fab fa-instagram fa-2x"></i>
+            <a href="https://github.com/rupamsau0010">
+              <i class="social_icons instagram_logo fab fa-github fa-2x"></i>  {/* Github === Instagram */}
             </a>
-            <a href="https://twitter.com/">
+            {/* <a href="https://twitter.com/">
               <i class="social_icons twiter_logo fab fa-twitter-square fa-2x"></i>
-            </a>
-            <a href="https://www.gmail.com/">
+            </a> */}
+            <a href="mailto:rupamsau72140@gmail.com" target="_blank" rel="noopener noreferrer">
               <i class="social_icons mail_logo fas fa-envelope fa-2x"></i>
             </a>
             <p>
               <span>
-                Made with <span class="fas fa-heart heart"></span> by
-                <a href="#">rupamsau_0010</a> |
-                <span class="far fa-copyright"></span> 2021 All rights reserved.
+                Made with <span class="fas fa-heart heart" style={{color: "crimson"}}></span> by 
+                <a href="https://github.com/rupamsau0010"> rupamsau_0010</a> | {" "}
+                <span class="far fa-copyright"></span> {new Date().getFullYear()} All rights reserved.
               </span>
             </p>
           </footer>
