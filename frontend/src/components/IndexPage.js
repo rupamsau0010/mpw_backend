@@ -169,7 +169,7 @@ export default class IndexPage extends Component {
                   <span style={{ display: "inline-block" }}>
                     <Typewriter
                       options={{
-                        strings: ["Hello", "World"],
+                        strings: ["Student", "Full-Stack Developer", "Data Science Enthusiast"],
                         autoStart: true,
                         loop: true,
                       }}
@@ -195,7 +195,7 @@ export default class IndexPage extends Component {
                     <span style={{ display: "inline-block" }}>
                       <Typewriter
                         options={{
-                          strings: ["Hello", "World"],
+                          strings: ["Student", "Full-Stack Developer", "Data Science Enthusiast"],
                           autoStart: true,
                           loop: true,
                         }}
@@ -245,39 +245,39 @@ export default class IndexPage extends Component {
                 <div className="column right">
                   <div className="bars">
                     <div className="info">
-                      <span>HTML</span>
-                      <span>10%</span>
+                       <span>NodeJs</span> {/* NodeJs === HTML */}
+                      <span>90%</span>
                     </div>
                     <div className="line html"></div>
                   </div>
                   <div className="bars">
                     <div className="info">
-                      <span>MySQL</span>
+                      <span>MongoDB</span>  {/* MongoDB === CSS */}
                       <span>90%</span>
-                    </div>
-                    <div className="line mysql"></div>
-                  </div>
-                  <div className="bars">
-                    <div className="info">
-                      <span>CSS</span>
-                      <span>80%</span>
                     </div>
                     <div className="line css"></div>
                   </div>
                   <div className="bars">
                     <div className="info">
-                      <span>JavaScript</span>
-                      <span>75%</span>
+                      <span>ReactJs</span>  {/* ReactJs === JavaScript */}
+                      <span>80%</span>
                     </div>
                     <div className="line js"></div>
                   </div>
                   <div className="bars">
                     <div className="info">
-                      <span>PHP</span>
-                      <span>90%</span>
+                      <span>Python</span>  {/* Python === PHP */}
+                      <span>85%</span>
                     </div>
                     <div className="line php"></div>
                   </div>
+                  <div className="bars">
+                    <div className="info">
+                      <span>Java</span>  {/* Java === MySQL */}
+                      <span>70%</span>
+                    </div>
+                    <div className="line mysql"></div>
+                  </div> 
                 </div>
               </div>
             </div>
@@ -390,8 +390,8 @@ export default class IndexPage extends Component {
             </a>
             <p>
               <span>
-                Made with <span class="fas fa-heart heart"></span> by
-                <a href="#">rupamsau_0010</a> |
+                Made with <span class="fas fa-heart heart"></span> by 
+                <a href="https://github.com/rupamsau0010"> rupamsau_0010</a> | {" "}
                 <span class="far fa-copyright"></span> 2021 All rights reserved.
               </span>
             </p>
@@ -407,7 +407,7 @@ export default class IndexPage extends Component {
             color="crimson"
             height={50}
             width={50}
-            timeout={3000} //3 secs
+            timeout={100000} //100 seconds max
           />
         </>
       );

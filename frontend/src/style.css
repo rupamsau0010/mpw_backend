@@ -380,13 +380,13 @@ section .title::after{
     width: 90%;
 }
 .skills-content .right .css::before{
-    width: 60%;
+    width: 90%;
 }
 .skills-content .right .js::before{
     width: 80%;
 }
 .skills-content .right .php::before{
-    width: 50%;
+    width: 85%;
 }
 .skills-content .right .mysql::before{
     width: 70%;
@@ -804,9 +804,9 @@ p.s2{
     img.s1{
         margin-left: 10%;
     }
-    h3.s1 {
+    /* h3.s1 {
 
-    }
+    } */
     p.s1{
         margin-right: 8%;
     }
@@ -853,9 +853,9 @@ p.s2{
     img.s1{
         margin-left: 6%;
     }
-    h3.s1 {
+    /* h3.s1 {
 
-    }
+    } */
     p.s1{
         margin-right: 4%;
     }
