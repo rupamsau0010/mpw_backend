@@ -199,7 +199,7 @@ export default class SkillsPage extends Component {
             color="crimson"
             height={50}
             width={50}
-            timeout={3000} //3 secs
+            timeout={100000} // 100 seconds max
           />
         </>
       );
