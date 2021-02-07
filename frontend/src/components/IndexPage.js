@@ -376,21 +376,21 @@ export default class IndexPage extends Component {
           </section>
           {/* <!--footer section---> */}
           <footer>
-            <a href="https://www.facebook.com/">
-              <i class="social_icons facebook_logo fab fa-facebook-square fa-2x"></i>
+            <a href="https://www.linkedin.com/in/rupamsau0010">
+              <i class="social_icons facebook_logo fab fa-linkedin fa-2x"></i> {/* LinkedIn === facebook */}
             </a>
-            <a href="https://www.instagram.com/">
-              <i class="social_icons instagram_logo fab fa-instagram fa-2x"></i>
+            <a href="https://github.com/rupamsau0010">
+              <i class="social_icons instagram_logo fab fa-github fa-2x"></i>  {/* Github === Instagram */}
             </a>
-            <a href="https://twitter.com/">
+            {/* <a href="https://twitter.com/">
               <i class="social_icons twiter_logo fab fa-twitter-square fa-2x"></i>
-            </a>
-            <a href="https://www.gmail.com/">
+            </a> */}
+            <a href="mailto:rupamsau72140@gmail.com" target="_blank" rel="noopener noreferrer">
               <i class="social_icons mail_logo fas fa-envelope fa-2x"></i>
             </a>
             <p>
               <span>
-                Made with <span class="fas fa-heart heart"></span> by 
+                Made with <span class="fas fa-heart heart" style={{color: "crimson"}}></span> by 
                 <a href="https://github.com/rupamsau0010"> rupamsau_0010</a> | {" "}
                 <span class="far fa-copyright"></span> 2021 All rights reserved.
               </span>
