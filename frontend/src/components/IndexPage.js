@@ -392,7 +392,7 @@ export default class IndexPage extends Component {
               <span>
                 Made with <span class="fas fa-heart heart" style={{color: "crimson"}}></span> by 
                 <a href="https://github.com/rupamsau0010"> rupamsau_0010</a> | {" "}
-                <span class="far fa-copyright"></span> 2021 All rights reserved.
+                <span class="far fa-copyright"></span> {new Date().getFullYear()} All rights reserved.
               </span>
             </p>
           </footer>
