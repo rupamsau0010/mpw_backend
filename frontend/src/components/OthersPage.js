@@ -146,7 +146,7 @@ export default class OthersPage extends Component {
           {/* <!---Education section---> */}
           <section id="education" className="education">
             <div className="main-tag">
-              <h1>Education</h1>
+              <h1>Educations</h1>
             </div>
             <div className="image">
               <img src="images/school.jpg" alt="school" />
@@ -173,7 +173,7 @@ export default class OthersPage extends Component {
           {/* <!---Achivement section---> */}
           <section id="achievement" className="achievement">
             <div className="main-tag">
-              <h1>Achievement</h1>
+              <h1>Achievements</h1>
             </div>
             <div className="image">
               <img src="images/achievement.jpg" alt="achievement" />
@@ -213,10 +213,10 @@ export default class OthersPage extends Component {
                   </div>
                   <div className="content">
                     <h4>
-                      From <span>{allall.info}</span>
+                      Info: <span>{allall.info}</span>
                     </h4>
                     <h4>
-                      Score: <span>{allall.leader}</span>
+                      Status: <span>{allall.leader}</span>
                     </h4>
                   </div>
                 </>
@@ -226,7 +226,7 @@ export default class OthersPage extends Component {
           {/* <!---Hobbies section---> */}
           <section id="hobby" className="hobby">
             <div className="main-tag">
-              <h1>Achievement</h1>
+              <h1>Hobbies</h1>
             </div>
             <div className="image">
               <img src="images/hobby.jpg" alt="achievement" />

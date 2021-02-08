@@ -124,7 +124,7 @@ export default class SkillsPage extends Component {
           <section className="home" id="home">
             <div className="max-width">
               <div className="home-content">
-                <div className="text-2">My Services</div>
+                <div className="text-2">My skills</div>
                 <div className="text-3">
                   I have some hands-on experience in
                   <span>

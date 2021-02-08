@@ -7,7 +7,7 @@ import Typewriter from "typewriter-effect";
 import validator from "email-validator"
 import "../style.css";
 
-import pdf from "../pdfs/cv.pdf";
+import pdf from "../pdfs/myCV1.pdf";
 
 export default class IndexPage extends Component {
   constructor(props) {

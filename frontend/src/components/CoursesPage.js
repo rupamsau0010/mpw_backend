@@ -125,12 +125,23 @@ export default class CoursesPage extends Component {
             <div className="max-width">
               <div className="home-content">
                 <div className="text-2">My Courses</div>
-                <div className="text-3">Some of the Courses I have completed</div>
+                <div className="text-3">
+                  Some of the Courses I have completed
+                </div>
                 <div className="text-3">
                   <span>
                     <Typewriter
                       options={{
-                        strings: ["The Complete 2021 Web Development Bootcamp - Angela Yu", "What is Data Science - IBM, Coursera", "Data Scientist with Python - Datacamp", "Startup India Learning Program - Upgrad", "Mastering Java se Programming from Beginner to Master - Abdul Bari, Udemy", "Master Data Structures and Algorithms using c and c++ - Abdul Bari, Udemy", "Problem Solving with C - NPTEL", "Better Spoken English - NPTEL"],
+                        strings: [
+                          "The Complete 2021 Web Development Bootcamp - Angela Yu",
+                          "What is Data Science - IBM, Coursera",
+                          "Data Scientist with Python - Datacamp",
+                          "Startup India Learning Program - Upgrad",
+                          "Mastering Java se Programming from Beginner to Master - Abdul Bari, Udemy",
+                          "Master Data Structures and Algorithms using c and c++ - Abdul Bari, Udemy",
+                          "Problem Solving with C - NPTEL",
+                          "Better Spoken English - NPTEL",
+                        ],
                         autoStart: true,
                         loop: true,
                       }}
@@ -163,22 +174,36 @@ export default class CoursesPage extends Component {
           {/* <!--footer section---> */}
           <footer>
             <a href="https://www.linkedin.com/in/rupamsau0010">
-              <i class="social_icons facebook_logo fab fa-linkedin fa-2x"></i> {/* LinkedIn === facebook */}
+              <i class="social_icons facebook_logo fab fa-linkedin fa-2x"></i>{" "}
+              {/* LinkedIn === facebook */}
             </a>
             <a href="https://github.com/rupamsau0010">
-              <i class="social_icons instagram_logo fab fa-github fa-2x"></i>  {/* Github === Instagram */}
+              <i class="social_icons instagram_logo fab fa-github fa-2x"></i>{" "}
+              {/* Github === Instagram */}
             </a>
             {/* <a href="https://twitter.com/">
               <i class="social_icons twiter_logo fab fa-twitter-square fa-2x"></i>
             </a> */}
-            <a href="mailto:rupamsau72140@gmail.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="mailto:rupamsau72140@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i class="social_icons mail_logo fas fa-envelope fa-2x"></i>
             </a>
             <p>
               <span>
-                Made with <span class="fas fa-heart heart" style={{color: "crimson"}}></span> by 
-                <a href="https://github.com/rupamsau0010"> rupamsau_0010</a> | {" "}
-                <span class="far fa-copyright"></span> {new Date().getFullYear()} All rights reserved.
+                Made with{" "}
+                <span
+                  class="fas fa-heart heart"
+                  style={{ color: "crimson" }}
+                ></span>{" "}
+                by
+                <a href="https://github.com/rupamsau0010">
+                  {" "}
+                  rupamsau_0010
+                </a> | <span class="far fa-copyright"></span>{" "}
+                {new Date().getFullYear()} All rights reserved.
               </span>
             </p>
           </footer>
