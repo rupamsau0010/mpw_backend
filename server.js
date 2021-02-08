@@ -34,6 +34,10 @@ app.use(mainRoutes)
 
 if(process.env.NODE_ENV === "production") {
     app.use(express.static('frontend/build'))
+}else {
+    app.get("/", (req, res) => {
+        res.send("API is running")
+    })
 }
 
 // Running the server on port 5000
