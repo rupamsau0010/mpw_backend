@@ -1,5 +1,5 @@
 import React, { Component, useEffect } from "react";
-import axios from "axios";
+import axios from "./axios";
 import $ from "jquery";
 import { Link, useLocation } from "react-router-dom";
 import Loader from "react-loader-spinner";

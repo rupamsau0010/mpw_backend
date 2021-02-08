@@ -32,6 +32,10 @@ app.use(express.urlencoded({extended: true}))
 // Router Calling
 app.use(mainRoutes)
 
+if(process.env.NODE_ENV === "production") {
+    app.use(express.static('frontend/build'))
+}
+
 // Running the server on port 5000
 const port = process.env.PORT
 app.listen(port || 5000, () => {
