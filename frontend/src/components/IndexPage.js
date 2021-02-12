@@ -4,7 +4,8 @@ import $ from "jquery";
 import { Link, useLocation } from "react-router-dom";
 import Loader from "react-loader-spinner";
 import Typewriter from "typewriter-effect";
-import validator from "email-validator"
+import 'font-awesome/css/font-awesome.min.css';
+import validator from "email-validator";
 import "../style.css";
 
 import pdf from "../pdfs/myCV1.pdf";
@@ -45,10 +46,10 @@ export default class IndexPage extends Component {
       message: this.state.message,
     };
 
-    let emailResult = validator.validate(payload.email)
-    let nameCheck = payload.name.split(" ").length
+    let emailResult = validator.validate(payload.email);
+    let nameCheck = payload.name.split(" ").length;
 
-    if(emailResult && (nameCheck >= 2)) {
+    if (emailResult && nameCheck >= 2) {
       axios({
         url: "/sendmessage",
         method: "POST",
@@ -62,10 +63,10 @@ export default class IndexPage extends Component {
         })
         .catch((err) => {
           console.log(err);
-          alert("Internal server error. Try again")
+          alert("Internal server error. Try again");
         });
     } else {
-      alert("Please Check your Full name and email and try again")
+      alert("Please Check your Full name and email and try again");
     }
   };
 
@@ -117,7 +118,7 @@ export default class IndexPage extends Component {
       return (
         <>
           <div className="scroll-up-btn" onClick={this.scrollToTop}>
-            <i class="fas fa-angle-up"></i>
+            <i className="fa fa-angle-up"></i>
           </div>
           <nav className="navbar">
             <div className="max-width">
@@ -154,7 +155,7 @@ export default class IndexPage extends Component {
                 </li>
               </ul>
               <div className="menu-btn" onClick={this.toggleSidenav}>
-                <i class={`fas fa-bars ${showHideSidenav}`}></i>
+                <i className={`fa fa-bars ${showHideSidenav}`}></i>
               </div>
             </div>
           </nav>
@@ -169,7 +170,11 @@ export default class IndexPage extends Component {
                   <span style={{ display: "inline-block" }}>
                     <Typewriter
                       options={{
-                        strings: ["Student", "Full-Stack Developer", "Data Science Enthusiast"],
+                        strings: [
+                          "Student",
+                          "Full-Stack Developer",
+                          "Data Science Enthusiast",
+                        ],
                         autoStart: true,
                         loop: true,
                       }}
@@ -195,7 +200,11 @@ export default class IndexPage extends Component {
                     <span style={{ display: "inline-block" }}>
                       <Typewriter
                         options={{
-                          strings: ["Student", "Full-Stack Developer", "Data Science Enthusiast"],
+                          strings: [
+                            "Student",
+                            "Full-Stack Developer",
+                            "Data Science Enthusiast",
+                          ],
                           autoStart: true,
                           loop: true,
                         }}
@@ -218,7 +227,7 @@ export default class IndexPage extends Component {
                 {allData.services.map((allall, index) => (
                   <div className="card">
                     <div className="box">
-                      <i class={allall.class}></i>
+                      <i className={allall.class}></i>
                       <div className="text">{allall.name}</div>
                       <p>{allall.tagLine}</p>
                       <Link to="/services" class="link" role="button">
@@ -245,39 +254,39 @@ export default class IndexPage extends Component {
                 <div className="column right">
                   <div className="bars">
                     <div className="info">
-                       <span>NodeJs</span> {/* NodeJs === HTML */}
+                      <span>NodeJs</span> {/* NodeJs === HTML */}
                       <span>90%</span>
                     </div>
                     <div className="line html"></div>
                   </div>
                   <div className="bars">
                     <div className="info">
-                      <span>MongoDB</span>  {/* MongoDB === CSS */}
+                      <span>MongoDB</span> {/* MongoDB === CSS */}
                       <span>90%</span>
                     </div>
                     <div className="line css"></div>
                   </div>
                   <div className="bars">
                     <div className="info">
-                      <span>ReactJs</span>  {/* ReactJs === JavaScript */}
+                      <span>ReactJs</span> {/* ReactJs === JavaScript */}
                       <span>80%</span>
                     </div>
                     <div className="line js"></div>
                   </div>
                   <div className="bars">
                     <div className="info">
-                      <span>Python</span>  {/* Python === PHP */}
+                      <span>Python</span> {/* Python === PHP */}
                       <span>85%</span>
                     </div>
                     <div className="line php"></div>
                   </div>
                   <div className="bars">
                     <div className="info">
-                      <span>Java</span>  {/* Java === MySQL */}
+                      <span>Java</span> {/* Java === MySQL */}
                       <span>70%</span>
                     </div>
                     <div className="line mysql"></div>
-                  </div> 
+                  </div>
                 </div>
               </div>
             </div>
@@ -293,14 +302,14 @@ export default class IndexPage extends Component {
                   <p>{allData.contact.tagLine}</p>
                   <div className="icons">
                     <div className="row">
-                      <i class="fas fa-user"></i>
+                      <i className="fa fa-user"></i>
                       <div className="info">
                         <div className="head">Full Name</div>
                         <div className="sub-title">{allData.contact.name}</div>
                       </div>
                     </div>
                     <div className="row">
-                      <i class="fas fa-map-marker-alt"></i>
+                      <i className="fa fa-map-marker"></i>
                       <div className="info">
                         <div className="head">Address</div>
                         <div className="sub-title">
@@ -309,7 +318,7 @@ export default class IndexPage extends Component {
                       </div>
                     </div>
                     <div className="row">
-                      <i class="fas fa-envelope"></i>
+                      <i className="fa fa-envelope"></i>
                       <div className="info">
                         <div className="head">Email</div>
                         <div className="sub-title">{allData.contact.email}</div>
@@ -377,22 +386,36 @@ export default class IndexPage extends Component {
           {/* <!--footer section---> */}
           <footer>
             <a href="https://www.linkedin.com/in/rupamsau0010">
-              <i class="social_icons facebook_logo fab fa-linkedin fa-2x"></i> {/* LinkedIn === facebook */}
+              <i class="social_icons facebook_logo fa fa-linkedin fa-2x"></i>{" "}
+              {/* LinkedIn === facebook */}
             </a>
             <a href="https://github.com/rupamsau0010">
-              <i class="social_icons instagram_logo fab fa-github fa-2x"></i>  {/* Github === Instagram */}
+              <i class="social_icons instagram_logo fa fa-github fa-2x"></i>{" "}
+              {/* Github === Instagram */}
             </a>
             {/* <a href="https://twitter.com/">
               <i class="social_icons twiter_logo fab fa-twitter-square fa-2x"></i>
             </a> */}
-            <a href="mailto:rupamsau72140@gmail.com" target="_blank" rel="noopener noreferrer">
-              <i class="social_icons mail_logo fas fa-envelope fa-2x"></i>
+            <a
+              href="mailto:rupamsau72140@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="social_icons mail_logo fa fa-envelope fa-2x"></i>
             </a>
             <p>
               <span>
-                Made with <span class="fas fa-heart heart" style={{color: "crimson"}}></span> by 
-                <a href="https://github.com/rupamsau0010"> rupamsau_0010</a> | {" "}
-                <span class="far fa-copyright"></span> {new Date().getFullYear()} All rights reserved.
+                Made with{" "}
+                <span
+                  class="fa fa-heart heart"
+                  style={{ color: "crimson" }}
+                ></span>{" "}
+                by
+                <a href="https://github.com/rupamsau0010">
+                  {" "}
+                  rupamsau_0010
+                </a> | <span class="fa fa-copyright"></span>{" "}
+                {new Date().getFullYear()} All rights reserved.
               </span>
             </p>
           </footer>

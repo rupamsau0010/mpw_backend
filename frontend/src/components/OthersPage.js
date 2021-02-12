@@ -67,7 +67,7 @@ export default class OthersPage extends Component {
         <>
           {/* <!---scroll-up button---> */}
           <div className="scroll-up-btn" onClick={this.scrollToTop}>
-            <i class="fas fa-angle-up"></i>
+            <i className="fa fa-angle-up"></i>
           </div>
           {/* <!--navbar---> */}
           <nav className="navbar">
@@ -115,7 +115,7 @@ export default class OthersPage extends Component {
                 </li>
               </ul>
               <div className="menu-btn" onClick={this.toggleSidenav}>
-                <i class={`fas fa-bars ${showHideSidenav}`}></i>
+                <i className={`fa fa-bars ${showHideSidenav}`}></i>
               </div>
             </div>
           </nav>
@@ -130,7 +130,12 @@ export default class OthersPage extends Component {
                   <span>
                     <Typewriter
                       options={{
-                        strings: ["Educations", "Achievements", "Projects", "Hobbies"],
+                        strings: [
+                          "Educations",
+                          "Achievements",
+                          "Projects",
+                          "Hobbies",
+                        ],
                         autoStart: true,
                         loop: true,
                       }}
@@ -239,10 +244,7 @@ export default class OthersPage extends Component {
                   </div>
                   <div className="content">
                     <h4>
-                      Like{" "}
-                      <span>
-                        {allall.names}
-                      </span>
+                      Like <span>{allall.names}</span>
                     </h4>
                   </div>
                 </>
@@ -253,22 +255,36 @@ export default class OthersPage extends Component {
           {/* <!---footer section---> */}
           <footer>
             <a href="https://www.linkedin.com/in/rupamsau0010">
-              <i class="social_icons facebook_logo fab fa-linkedin fa-2x"></i> {/* LinkedIn === facebook */}
+              <i class="social_icons facebook_logo fa fa-linkedin fa-2x"></i>{" "}
+              {/* LinkedIn === facebook */}
             </a>
             <a href="https://github.com/rupamsau0010">
-              <i class="social_icons instagram_logo fab fa-github fa-2x"></i>  {/* Github === Instagram */}
+              <i class="social_icons instagram_logo fa fa-github fa-2x"></i>{" "}
+              {/* Github === Instagram */}
             </a>
             {/* <a href="https://twitter.com/">
               <i class="social_icons twiter_logo fab fa-twitter-square fa-2x"></i>
             </a> */}
-            <a href="mailto:rupamsau72140@gmail.com" target="_blank" rel="noopener noreferrer">
-              <i class="social_icons mail_logo fas fa-envelope fa-2x"></i>
+            <a
+              href="mailto:rupamsau72140@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="social_icons mail_logo fa fa-envelope fa-2x"></i>
             </a>
             <p>
               <span>
-                Made with <span class="fas fa-heart heart" style={{color: "crimson"}}></span> by 
-                <a href="https://github.com/rupamsau0010"> rupamsau_0010</a> | {" "}
-                <span class="far fa-copyright"></span> {new Date().getFullYear()} All rights reserved.
+                Made with{" "}
+                <span
+                  class="fa fa-heart heart"
+                  style={{ color: "crimson" }}
+                ></span>{" "}
+                by
+                <a href="https://github.com/rupamsau0010">
+                  {" "}
+                  rupamsau_0010
+                </a> | <span class="fa fa-copyright"></span>{" "}
+                {new Date().getFullYear()} All rights reserved.
               </span>
             </p>
           </footer>

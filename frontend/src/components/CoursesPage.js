@@ -67,7 +67,7 @@ export default class CoursesPage extends Component {
         <div className="html">
           {/* <!---scroll-up button---> */}
           <div className="scroll-up-btn" onClick={this.scrollToTop}>
-            <i class="fas fa-angle-up"></i>
+            <i className="fa fa-angle-up"></i>
           </div>
           {/* <!--navbar---> */}
           <nav className="navbar">
@@ -115,7 +115,7 @@ export default class CoursesPage extends Component {
                 </li>
               </ul>
               <div className="menu-btn" onClick={this.toggleSidenav}>
-                <i class={`fas fa-bars ${showHideSidenav}`}></i>
+                <i className={`fa fa-bars ${showHideSidenav}`}></i>
               </div>
             </div>
           </nav>
@@ -174,11 +174,11 @@ export default class CoursesPage extends Component {
           {/* <!--footer section---> */}
           <footer>
             <a href="https://www.linkedin.com/in/rupamsau0010">
-              <i class="social_icons facebook_logo fab fa-linkedin fa-2x"></i>{" "}
+              <i class="social_icons facebook_logo fa fa-linkedin fa-2x"></i>{" "}
               {/* LinkedIn === facebook */}
             </a>
             <a href="https://github.com/rupamsau0010">
-              <i class="social_icons instagram_logo fab fa-github fa-2x"></i>{" "}
+              <i class="social_icons instagram_logo fa fa-github fa-2x"></i>{" "}
               {/* Github === Instagram */}
             </a>
             {/* <a href="https://twitter.com/">
@@ -189,20 +189,20 @@ export default class CoursesPage extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i class="social_icons mail_logo fas fa-envelope fa-2x"></i>
+              <i class="social_icons mail_logo fa fa-envelope fa-2x"></i>
             </a>
             <p>
               <span>
                 Made with{" "}
                 <span
-                  class="fas fa-heart heart"
+                  class="fa fa-heart heart"
                   style={{ color: "crimson" }}
                 ></span>{" "}
                 by
                 <a href="https://github.com/rupamsau0010">
                   {" "}
                   rupamsau_0010
-                </a> | <span class="far fa-copyright"></span>{" "}
+                </a> | <span class="fa fa-copyright"></span>{" "}
                 {new Date().getFullYear()} All rights reserved.
               </span>
             </p>
